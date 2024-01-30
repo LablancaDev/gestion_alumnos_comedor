@@ -1,0 +1,15 @@
+# Ignorar archivos y carpetas generadas por el sistema o el entorno
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de configuración específicos de IDE
+.idea/
+.vscode/
+
+# Ignorar archivos de respaldo
+*.bak
+*.swp
+
+# Ignorar archivos temporales
+*.tmp
+*.temp
