@@ -1,0 +1,44 @@
+html,
+body {
+    height: 100%;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+} 
+
+.content {
+    flex: 1;
+} 
+
+.fondo{
+    background-image: url('../imgs/comedor3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  
+}
+.navbar,
+.footer {
+    background: linear-gradient(to right, #ffffff, #b7b7b7, #323232);
+}
+
+.mensaje-guardado {
+    display: none;
+    position: absolute;
+    background-color: #C1E92A;
+    padding: 8px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    z-index: 999; 
+    transition: opacity 0.5s ease; 
+}
+
+.mensaje-guardado.mostrar {
+    display: block;
+    opacity: 1;
+}
+

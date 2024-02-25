@@ -1,0 +1,26 @@
+body{
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.fondo {
+    background-image: url('../imgs/comedor5.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: -1; 
+}
+.navbar,
+.footer {
+    background: linear-gradient(to right, #ffffff, #b7b7b7, #323232);
+}

@@ -1,0 +1,35 @@
+html,
+body {
+    user-select: none;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+.fondo {
+    background-image: url('../imgs/cole.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    position: relative;
+}
+.fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: -1; 
+}
+.navbar,
+.footer {
+    background: linear-gradient(to right, #ffffff, #b7b7b7, #323232);
+}
